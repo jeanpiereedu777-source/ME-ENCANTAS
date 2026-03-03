@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CADA DIA ME ENAMORAS MAS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Short+Stack&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <!-- Fondo con TUS stickers flotando -->
+  <div class="floating-stickers" aria-hidden="true"></div>
+
+  <!-- Música -->
+  <audio id="bgMusic" loop>
+    <source src="musica2.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- UI principal -->
+  <main class="stage">
+    <section class="note" role="group" aria-label="Test romántico">
+      <!-- Decoraciones -->
+      <div class="doodle d1" aria-hidden="true">❤</div>
+      <div class="doodle d2" aria-hidden="true">❤</div>
+      <div class="doodle d3" aria-hidden="true">❤</div>
+      <div class="doodle d4" aria-hidden="true">❤</div>
+
+      <header class="top">
+        <div class="badge"> ultra secreto</div>
+        <h1>Test Oficial de “Eres mi persona” </h1>
+        <p class="subtitle">Si apruebas… hay premio. Si no… igual </p>
+      </header>
+
+      <div class="content">
+        <p class="question" id="question">
+          Ok, pregunta seria <br>
+          ¿Quién es la más guapa del planeta?
+        </p>
+
+        <div class="answers" id="answers">
+          <button class="btn btn-yes" data-next>Tú</button>
+          <button class="btn btn-yes" data-next>Obviamente tú</button>
+          <button class="btn btn-yes" data-next>No hay discusión</button>
+        </div>
+
+        <div class="final" id="finalMessage" hidden>
+          <p class="finalTitle">Aprobasteeeee con 100/10</p>
+          <p class="finalText">
+            Premio desbloqueado: <b>un beso de 8 horas</b> ✨<br>
+            (No hay devoluciones, ni rechasos)
+          </p>
+
+          <div class="finalActions">
+            <button class="btn btn-yes" id="acceptPrize">Aceptar premioooo</button>
+            <button class="btn btn-soft" id="backIntro">Volver a verlo </button>
+            <button class="btn btn-yes" id="dedicoBtn">Te dedico esta musiquita</button>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="bottom">
+        
+        <span class="hint">Tip: el botón “No” es tímidoo xd</span>
+      </footer>
+    </section>
+
+  
+    <!-- Botón NO (huye) -->
+    <button class="btn btn-no" id="noBtn" type="button" aria-label="No">No 🙄</button>
+ 
+
+    <!-- Corazones -->
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>
